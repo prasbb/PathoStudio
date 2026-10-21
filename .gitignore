@@ -1,0 +1,21 @@
+.tools/
+opencode.json
+**pycache**
+models/weights/
+.venv/ 
+ashby_studio.egg-info/
+calcium\ result/
+cmb_brca_paired/
+radiography/
+Test/
+tools/
+**.DS_Store**
+models/ 
+feature_models/ 
+.pytest_cache/ 
+contracts/
+docs/ 
+**.DS_Store**
+Agents.MD
+*.TAG*
+skills/

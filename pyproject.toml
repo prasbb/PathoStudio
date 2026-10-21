@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ashby-studio"
+version = "0.1.0"
+description = "Offline-first research-grade breast histopathology annotation tool (M0: manual annotations + mock AI)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "napari>=0.5",
+    "PySide6>=6.6",
+    "numpy",
+    "tifffile",
+    "scikit-image",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-qt",
+]
+
+[project.scripts]
+ashby-studio = "ashby_studio.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["ashby_studio*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
